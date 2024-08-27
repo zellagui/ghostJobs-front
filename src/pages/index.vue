@@ -9,7 +9,6 @@
   import {
     insuranceFeatures,
     values,
-    featureMatrix,
     testimonials,
   } from '/@src/data/pages/insurance'
   import { socialLinks } from '/@src/data/blocks/advanced/social'
