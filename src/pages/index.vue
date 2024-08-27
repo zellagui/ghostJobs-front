@@ -9,7 +9,6 @@
   import {
     insuranceFeatures,
     values,
-    appFeatures,
     featureMatrix,
     testimonials,
   } from '/@src/data/pages/insurance'
