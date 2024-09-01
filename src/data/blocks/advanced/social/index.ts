@@ -1,12 +1,7 @@
 export const socialLinks = [
   {
-    name: 'Facebook',
-    url: 'https://facebook.com',
-    icon: 'fa:facebook',
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com',
+    name: 'X',
+    url: 'https://x.com/ghostjobs_',
     icon: 'fa:twitter',
   },
   {
@@ -15,8 +10,8 @@ export const socialLinks = [
     icon: 'fa:linkedin',
   },
   {
-    name: 'GitHub',
+    name: 'Instagram',
     url: 'https://github.com',
-    icon: 'fa:github',
+    icon: 'fa:instagram',
   },
 ]

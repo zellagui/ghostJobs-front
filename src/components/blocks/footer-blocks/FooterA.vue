@@ -128,7 +128,7 @@ const footerClasses = computed(() => [
           role="img"
           aria-label="copyright"
         >©</span>
-        2020-2021 Vulk. All rights reserved.
+        2024-2025 Ghostjobs. All rights reserved.
       </p>
     </div>
   </footer>

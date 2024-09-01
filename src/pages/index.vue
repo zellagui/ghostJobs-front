@@ -20,6 +20,7 @@
 import { features } from '/@src/data/blocks/features'
 
 import { genericFaq } from '/@src/data/blocks/advanced/faq'
+import { features5 } from '/@src/data/blocks/features'
 
 import {
  
@@ -64,18 +65,45 @@ import {marketingIconFeatures} from '/@src/data/pages/marketing'
 
           <IconSection :features="marketingIconFeatures" />
 
-          <SimpleCta />
+          <!-- <SimpleCta /> -->
         </Container>
       </Container>
     </Section>
   
     
   
-    <Section
-      color="grey"
-      wave="wave-1"
-      shape-color="white"
-    >
+    <Section color="grey">
+      <Container>
+        <SectionTitle
+          title="Be our beta user &#8212; It's Free"
+          subtitle="Ready to join us?"
+        />
+
+        <!--Subscribe-->
+        <SubscriptionCompactBlock
+          text="Early user get a private access to the Discord, where your idea's are part of the solution."
+          label="Subscribe"
+          placeholder="Enter your email"
+        />
+
+        <!-- <TestimonialBlockA :testimonials="testimonials" /> -->
+
+        <!-- <CtaBlockA
+          title="Ready to join us?"
+          subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam
+        dissimile?"
+          cta-primary="Subscribe"
+          cta-primary-link="index"
+          cta-secondary="Learn More"
+          cta-secondary-link="index"
+          :logos="customerLogos"
+          boxed
+          shapes
+        /> -->
+      </Container>
+    </Section>
+
+    <Section color="grey">
       <Container>
         <SectionTitle
           title="Take the time to read our FAQs"
@@ -89,47 +117,12 @@ import {marketingIconFeatures} from '/@src/data/pages/marketing'
         />
       </Container>
     </Section>
-  
-    <Section wave="wave-2">
-      <Container>
-        <div class="mx-auto max-w-9">
-          <PageTitle
-            title="Receive your invitation "
-            subtitle=" Ready to join us?"
-          >
-            <template #content>
-              <!-- <div class="mx-auto max-w-6 mt-2">
-                <p class="paragraph rem-115">
-                  Be among the first to explore and enrich our platform. 
-                </p>
-              </div> -->
 
-              <div class="mx-auto max-w-4 mt-4">
-                <SubscriptionCompact
-                  label="Subscribe"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <br>
-              <Subtitle
-                tag="h5"
-                :size="5"
-                weight="thin"
-                leading
-              >
-                Contact us at: hello@ghostjobs.io
-              </Subtitle>
-            </template>
-          </PageTitle>
-        </div>
-      </container>
-    </Section>
-    <!-- <FooterA
+    <FooterA
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
               non possum. Apparet statim, quae sint officia, quae actiones."
       color="grey"
       :social-links="socialLinks"
-    /> -->
+    />
   </div>
 </template>
-  

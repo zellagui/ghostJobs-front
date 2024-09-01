@@ -46,10 +46,10 @@ export default {
     disableTransitions: true,
   },
   logo: {
-    src: '/assets/logo/logo.svg',
+    src: '/assets/logo/gg.svg',
     // srcDark: '/assets/logo/logo-dark.svg',
-    width: 45,
-    height: 45,
+    width: 50,
+    height: 50,
   },
   layout: {
     transition: 'fade-fast',
@@ -63,7 +63,7 @@ export default {
       props: {
         // define default props for Navbar here, you can override them using page meta
         cta: {
-          to: 'https://go.cssninja.io/buy-vulk',
+          to: '/',
           target: '_blank',
           label: 'Subscribe',
         },
