@@ -17,7 +17,6 @@
   marketingStats,
   testimonialsMarquee,
 } from '/@src/data/pages/marketing'
-import { features } from '/@src/data/blocks/features'
 
 import { genericFaq } from '/@src/data/blocks/advanced/faq'
 import { features5 } from '/@src/data/blocks/features'
