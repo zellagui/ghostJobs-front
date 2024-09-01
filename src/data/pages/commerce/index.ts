@@ -286,36 +286,36 @@ export const customerLogos = [
 export const faq = {
   left: [
     {
-      title: 'How much does it cost?',
+      title: 'Do you charge anything for using this site?',
       content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+        'No, currently our platform is a free resource for job seekers.',
     },
     {
-      title: 'Does it really work anywhere?',
+      title: 'How are you different from other job boards?',
       content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+        'Other job boards only show the most recent job postings. Whenever a job is refreshed/re-posted, you only see the most recent information. This means that a company could re-post a job dozens of times and give a false impression of low applicant counts or a "recent" job posting. We include a history to help candidates make informed decisions to apply based on total applicant counts (all time) and number of reposts/age. We also include community reviews and ratings so candidates have an outlet to provide their insights and experience. ',
     },
     {
-      title: 'How does it differ from other tools?',
+      title: 'Are my contributions anonymous?',
       content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+        'Yes, we value candidate privacy, ensuring your reviews remain anonymous.',
     },
   ],
   right: [
     {
-      title: 'How does it work?',
+      title: 'How can I support Ghost Jobs?',
       content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+        'Our platform was created by two individuals who are personally witnessing the impacts of the market, so we decided to do something about it. If you would like to support our cause, subscribe to get your early access.',
     },
-    {
-      title: 'Can I try it for free?',
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
-    },
-    {
-      title: 'How many agents are allowed?',
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
-    },
+    // {
+    //   title: 'Can I try it for free?',
+    //   content:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+    // },
+    // {
+    //   title: 'How many agents are allowed?',
+    //   content:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+    // },
   ],
 }

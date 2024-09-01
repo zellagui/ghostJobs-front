@@ -18,7 +18,7 @@ import { heroAvatars } from '/@src/data/pages/marketing'
             :size="1"
             weight="bold"
           >
-            <span class="text-gradient">Empower your digital marketing</span>
+            <span class="text-gradient">You deserve transparency in your job search.</span>
           </Title>
           <Subtitle
             tag="p"
@@ -26,16 +26,16 @@ import { heroAvatars } from '/@src/data/pages/marketing'
             weight="thin"
             class="mx-auto max-w-6 b-centered-tablet-p pt-2"
           >
-            The AI-powered platform to optimize and grow your ecommerce business
-            on all online marketplaces.
+            Tired of wasting your time chasing ghosts? Empower yourself and others to identify, 
+            report, and sidestep suspicious job postings. 
           </Subtitle>
 
           <!--Hero Benefits-->
           <HeroCenteredBenefits
             :benefits="[
-              'Reach customers',
-              'Save hours of time',
-              'Be more profitable',
+              'Real insights',
+              'Honest reviews',
+              'Streamlined Search',
             ]"
           />
 
@@ -46,30 +46,24 @@ import { heroAvatars } from '/@src/data/pages/marketing'
               elevated
               bold
             >
-              Free Trial
-            </Button>
-            <Button
-              elevated
-              bold
-            >
-              Learn More
+              Join the movement
             </Button>
           </div>
 
           <!--Hero Avatars-->
-          <HeroAvatars :avatars="heroAvatars" />
+          <!-- <HeroAvatars :avatars="heroAvatars" /> -->
 
           <!--Customer logos -->
-          <HeroDualLogos
+          <!-- <HeroDualLogos
             left="/assets/brands/vonmo.svg"
             right="/assets/brands/bobcot.svg"
-          />
+          /> -->
 
           <!--Hero App Mockup-->
           <DarkImage
             class="centered-app is-relative mx-auto max-w-9 my-4 z-1"
-            src="/assets/illustrations/apps/hero-app-screen.png"
-            src-dark="/assets/illustrations/apps/hero-app-screen-dark.png"
+            src="/images/Flagged.svg"
+            src-dark="/images/Flagged.svg"
             alt=""
             width="1519"
             height="949"

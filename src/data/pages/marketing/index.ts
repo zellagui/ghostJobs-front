@@ -167,25 +167,25 @@ export const marketingProcess = {
     {
       id: 0,
       icon: '/assets/icons/abstract/1.svg',
-      title: 'Goal-based Campaign Creation',
+      title: 'Flag & Review',
       content:
-        'Build a foundation for long-term success. Our automation utilizes your individual product-level goals to create optimal advertising campaigns in four simple steps.',
+        'Collaboratively identify and discuss potential job posting red flags with a community of like-minded job seekers.',
       image: '/assets/illustrations/workflow/workflow-1.png',
       imageDark: '/assets/illustrations/workflow/workflow-1-dark.png',
     },
     {
       id: 1,
       icon: '/assets/icons/abstract/2.svg',
-      title: 'Algorithmic Keyword Bidding',
+      title: 'Company historical data & Job Analytics',
       content:
-        'Never set a keyword bid again. Our AI-powered optimization leverages your goals to find your ideal bid value, so you’re always capturing sales at the price that’s right for you.',
+        'Get detailed insights into job postings, helping you make informed decisions before you apply.',
       image: '/assets/illustrations/workflow/workflow-2.png',
       imageDark: '/assets/illustrations/workflow/workflow-2-dark.png',
     },
     {
       id: 2,
       icon: '/assets/icons/abstract/3.svg',
-      title: 'Automated Keyword Targeting',
+      title: 'Job Search Hacking',
       content:
         'Optimize your keywords for sales growth and profitability. Automatically capture new converting keywords while negating ones that are hurting performance.',
       image: '/assets/illustrations/workflow/workflow-3.png',
@@ -453,22 +453,22 @@ export const marketingIconFeatures = [
   {
     id: 0,
     icon: '/assets/icons/colored/chat.svg',
-    title: 'Reach more customers',
+    title: 'Flag & Review',
     content:
-      'Be where your customers are. Target buyers by search behavior, discover new converting keywords, and automatically set bids based on your product goals.',
+      'Collaboratively identify and discuss potential job posting red flags with a community of like-minded job seekers.',
   },
   {
     id: 1,
     icon: '/assets/icons/colored/clock.svg',
-    title: 'Save hours of time a week',
+    title: 'Historical Data & Insights',
     content:
-      'Optimize your advertising workflow with automated campaign creation, keyword refinement, and algorithmic bidding. You set the controls, and our AI-technology does the heavy lifting.',
+      'Get historical data & insights into job postings, helping you make informed decisions before you apply.',
   },
   {
     id: 2,
     icon: '/assets/icons/colored/certificate.svg',
-    title: 'Get profitability insights',
+    title: 'Job Search Hacking',
     content:
-      'Connect your PPC spend to individual product costs and see a granular view of your product-level profitability. Confidently make smart decisions with essential metrics and reporting.',
+      'Leverage job seeker tools and resources to effectively land your next career.',
   },
 ]

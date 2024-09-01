@@ -31,7 +31,7 @@ export const values = [
     darkImage: '/assets/illustrations/about/mission-dark.svg',
     title: 'Our Mission',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui-vere falsone quaerere',
+      'Bring a transparent platform that exposes unreliable job postings.',
   },
   {
     id: 1,
@@ -39,7 +39,7 @@ export const values = [
     darkImage: '/assets/illustrations/about/world.svg',
     title: 'Our Vision',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui-vere falsone quaerere',
+      ' Provide access to reliable and accurate job market information for every job seeker.',
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ export const values = [
     darkImage: '/assets/illustrations/about/values.svg',
     title: 'Our Values',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui-vere falsone quaerere',
+      'Maintaining honesty and transparency in our interactions and data.',
   },
 ]
 

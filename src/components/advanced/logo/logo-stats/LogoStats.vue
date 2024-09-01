@@ -45,28 +45,25 @@ const invertedClasses = computed(() => [props.inverted && 'is-inverted'])
             leading
             :inverted="props.inverted"
           >
-            <span>{{ props.heading }}</span>
+            <span>70% of hiring managers</span>
           </Title>
           <p class="paragraph max-w-5">
-            {{ props.content }}
+            believe posting fake jobs is morally acceptable
           </p>
         </div>
         <div class="right">
-          <div
-            class="columns is-vcentered is-multiline b-columns-half-mobile b-columns-half-tablet-p"
+          <Title
+            tag="h3"
+            :size="5"
+            weight="semi"
+            leading
+            :inverted="props.inverted"
           >
-            <div
-              v-for="(logo, index) in props.logos.slice(0, 6)"
-              :key="index"
-              class="column is-4"
-            >
-              <img
-                class="is-relative"
-                :src="logo.logo"
-                alt="Customer logo"
-              >
-            </div>
-          </div>
+            <span>1.8M jobs</span>
+          </Title>
+          <p class="paragraph max-w-5">
+            posted on LinkedIn are more that a month old
+          </p>
         </div>
       </div>
     </div>

@@ -65,25 +65,25 @@ export default {
         cta: {
           to: 'https://go.cssninja.io/buy-vulk',
           target: '_blank',
-          label: 'Buy Vulk',
+          label: 'Subscribe',
         },
         items: [
           {
             label: 'Home',
             to: '/',
           },
-          {
-            label: 'Faq',
-            to: '/page/faq',
-          },
-          {
-            label: 'Blog',
-            to: '/page/faq',
-          },
-          {
-            label: 'Contact Us',
-            to: '/page/faq',
-          },
+          // {
+          //   label: 'Faq',
+          //   to: '/page/faq',
+          // },
+          // {
+          //   label: 'Blog',
+          //   to: '/page/faq',
+          // },
+          // {
+          //   label: 'Contact Us',
+          //   to: '/page/faq',
+          // },
         ],
       },
     },
