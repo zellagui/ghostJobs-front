@@ -105,7 +105,6 @@ import {marketingIconFeatures} from '/@src/data/pages/marketing'
     <Section color="grey">
       <Container>
         <SectionTitle
-          title="Take the time to read our FAQs"
           subtitle="Frequently Asked"
         />
 
