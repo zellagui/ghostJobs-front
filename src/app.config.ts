@@ -72,14 +72,18 @@ export default {
             label: 'Home',
             to: '/',
           },
-          // {
-          //   label: 'Faq',
-          //   to: '/page/faq',
-          // },
-          // {
-          //   label: 'Blog',
-          //   to: '/page/faq',
-          // },
+          {
+            label: 'Browse',
+            to: 'browse',
+          },
+          {
+            label: 'Survey',
+            to: 'survey',
+          },
+          {
+            label: 'Blog',
+            to: 'blog-page',
+          },
           // {
           //   label: 'Contact Us',
           //   to: '/page/faq',
@@ -88,7 +92,7 @@ export default {
       },
     },
     footer: {
-      enabled: true,
+      enabled: false,
       component: Footer,
       props: {
         // define default props for Footer here, you can override them using page meta
