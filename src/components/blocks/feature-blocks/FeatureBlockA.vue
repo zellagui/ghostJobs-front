@@ -83,13 +83,13 @@ const textClasses = computed(() => [
             >
               {{ feature.text }}
             </p>
-            <ActionLink
+            <!-- <ActionLink
               v-if="props.links"
               :link="feature.link"
               size="small"
             >
               Learn More
-            </ActionLink>
+            </ActionLink> -->
           </slot>
         </div>
       </div>

@@ -1,18 +1,19 @@
 <script setup lang="ts">
 const options = [
   {
-    value: 'Hamburger',
-    label: 'Hamburger',
+    value: 'job posting',
+    label: 'job posting',
   },
   {
-    value: 'Cheeseburger',
-    label: 'Cheeseburger',
+    value: 'company',
+    label: 'company',
   },
   {
-    value: 'Burito',
-    label: 'Burito',
+    value: 'recruiters',
+    label: 'recruiters',
   },
 ]
+
 </script>
 
 <template>
@@ -23,7 +24,7 @@ const options = [
           icon="feather:search"
           expanded
         >
-          <VInput placeholder="What are you looking for?" />
+          <VInput placeholder="Who are you looking to report?" />
         </Control>
         <Control>
           <VSelect
@@ -34,12 +35,13 @@ const options = [
       </Field>
       <div>
         <Button
+          href="https://forms.gle/7kY88Jh5Z8FfCWR87"
           color="primary"
           bold
           raised
           fullwidth
         >
-          Quick Search
+          Report
         </Button>
       </div>
     </div>

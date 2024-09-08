@@ -15,43 +15,25 @@ import { customerLogos } from '/@src/data/pages/logos'
           <div class="hero-caption">
             <Title
               tag="h1"
-              :size="2"
+              :size="3"
               weight="bold"
             >
-              Try team meetings like you never did before.
+              Flag Companies, Report Suspicious Job Postings
             </Title>
             <Subtitle
               tag="p"
               :size="5"
               classes="b-centered-tablet-p text-medium"
             >
-              This is the place where teams gather to build collaborative
-              meeting agendas, record decisions, and task assignments.
+              Together, we can restore transparency to the job market.
             </Subtitle>
-            <!--Buttons-->
-            <div class="buttons is-relative z-1">
-              <Button
-                color="primary"
-                :long="2"
-                raised
-                bold
-              >
-                Free Trial
-              </Button>
-              <Button
-                elevated
-                bold
-                :long="2"
-              >
-                Learn More
-              </Button>
-            </div>
+            <QuickJobSearch />
           </div>
         </div>
         <div class="column is-6 is-offset-1">
           <div class="circle-composition">
             <img
-              src="data:image/gif;base64,replace_with_your_image"
+              src="/images/ghost-report.svg"
               width="500"
               height="500"
               alt="hero-image"
@@ -170,13 +152,13 @@ import { customerLogos } from '/@src/data/pages/logos'
         </div>
       </div>
     </template>
-    <template #footer>
+    <!-- <template #footer>
       <div class="mx-auto max-w-8">
         <div class="tabs is-centered pb-4">
           <HeroClients :logos="customerLogos" />
         </div>
       </div>
-    </template>
+    </template> -->
   </Hero>
 </template>
 

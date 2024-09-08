@@ -14,86 +14,138 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
       <div class="columns is-vcentered">
         <div class="column is-5">
           <Title
-            tag="h1"
+            tag="h2"
             :size="2"
             weight="bold"
           >
-            Find a job in a world leading company.
+            Flag Companies, Report Suspicious Job Postings
           </Title>
           <Subtitle
             tag="p"
             :size="5"
             classes="b-centered-tablet-p text-medium"
           >
-            More than 7,879 IT job offers are currently available.
+            Together, we can restore transparency to the job market.
           </Subtitle>
-          <!--Search-->
+          <!--Search src="/images/ghost-report.svg"-->
           <QuickJobSearch />
         </div>
-        <div class="column is-7">
-          <div class="hero-image-composition">
-            <div class="image-wrap">
-              <img
-                class="inner-image"
-                src="data:image/gif;base64,replace_with_your_image"
-                alt="Hero image"
-                width="800"
-                height="1200"
-                @error.once="
-                  (event) => viaPlaceholderErrorHandler(event, `800x1200`)
-                "
-              >
-              <!--Floating disks-->
-              <div class="perspective bg-gradient-primary" />
-              <div class="half-circle half-circle-1 text-success">
-                <HalfCircle />
-              </div>
-              <div class="half-circle half-circle-2 text-secondary">
-                <HalfCircle />
-              </div>
-
-              <div class="job-bubble job-bubble-1">
-                <AvatarSimple
-                  picture="/assets/apps/gitlab-light.svg"
-                  size="medium"
-                />
-                <div class="bubble-content">
-                  <span />
-                  <span />
+        <div class="column is-6 is-offset-1">
+          <div class="circle-composition">
+            <img
+              src="data:image/gif;base64,replace_with_your_image"
+              width="500"
+              height="500"
+              alt="hero-image"
+              @error.once="
+                (event) => viaPlaceholderErrorHandler(event, `500x500`)
+              "
+            >
+            <!--Dots-->
+            <div class="composition-dot composition-dot-1">
+              <i
+                class="iconify"
+                data-icon="ion:leaf-outline"
+              />
+            </div>
+            <div class="composition-dot composition-dot-2">
+              <i
+                class="iconify"
+                data-icon="ion:calendar-outline"
+              />
+            </div>
+            <div class="composition-dot composition-dot-3">
+              <i
+                class="iconify"
+                data-icon="ion:stopwatch-outline"
+              />
+            </div>
+            <!--Blocks-->
+            <div class="composition-block composition-block-1">
+              <div class="composition-card">
+                <Title
+                  tag="h3"
+                  :size="7"
+                  weight="semi"
+                  leading
+                >
+                  Weekly priorities meeting
+                </Title>
+                <div class="is-flex is-align-items-center">
+                  <span class="fake-dot" />
+                  <p class="paragraph rem-85">
+                    Discuss upcoming projects
+                  </p>
                 </div>
               </div>
-
-              <div class="job-bubble job-bubble-2">
+              <div class="composition-avatar">
                 <AvatarSimple
-                  picture="/assets/apps/airbnb-light.svg"
                   size="medium"
+                  picture="data:image/gif;base64,replace_with_your_image"
                 />
-                <div class="bubble-content">
-                  <span />
-                  <span />
+              </div>
+            </div>
+            <div class="composition-block composition-block-2">
+              <div class="composition-card">
+                <Title
+                  tag="h3"
+                  :size="7"
+                  weight="semi"
+                  leading
+                >
+                  It was a great meeting!
+                </Title>
+                <div class="is-flex is-align-items-center">
+                  <i
+                    class="iconify star-icon"
+                    data-icon="uiw:star-on"
+                  />
+                  <i
+                    class="iconify star-icon"
+                    data-icon="uiw:star-on"
+                  />
+                  <i
+                    class="iconify star-icon"
+                    data-icon="uiw:star-on"
+                  />
+                  <i
+                    class="iconify star-icon"
+                    data-icon="uiw:star-on"
+                  />
+                  <i
+                    class="iconify star-icon"
+                    data-icon="uiw:star-on"
+                  />
                 </div>
               </div>
-
-              <div class="job-bubble job-bubble-3">
+              <div class="composition-avatar">
                 <AvatarSimple
-                  picture="/assets/apps/atlassian-light.svg"
                   size="medium"
+                  picture="data:image/gif;base64,replace_with_your_image"
                 />
-                <div class="bubble-content">
-                  <span />
-                  <span />
+              </div>
+            </div>
+            <div class="composition-block composition-block-3">
+              <div class="composition-card">
+                <Title
+                  tag="h3"
+                  :size="7"
+                  weight="semi"
+                  leading
+                >
+                  Project review #2
+                </Title>
+                <div class="is-flex is-align-items-center">
+                  <p class="paragraph rem-85">
+                    Team review before launch
+                  </p>
                 </div>
               </div>
-
-              <div class="job-bubble job-bubble-4">
+              <div class="composition-avatar">
                 <AvatarSimple
-                  picture="/assets/apps/google-light.svg"
                   size="medium"
+                  picture="data:image/gif;base64,replace_with_your_image"
                 />
-                <div class="bubble-content">
-                  <span />
-                  <span />
-                </div>
               </div>
             </div>
           </div>
@@ -120,8 +172,7 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
 
     .inner-image {
       position: absolute;
-      bottom: 0;
-      right: 10%;
+      right: 11.5%;
       display: block;
       margin: 0 auto;
       width: 100%;

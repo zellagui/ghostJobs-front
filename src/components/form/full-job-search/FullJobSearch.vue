@@ -36,32 +36,22 @@ const formClasses = computed(() => [props.compact && 'is-compact'])
           icon="feather:search"
           expanded
         >
-          <VInput placeholder="What are you looking for?" />
+          <VInput placeholder="Enter postings URL postings or company name" />
         </Control>
-        <Control>
+        <!-- <Control>
           <VSelect
             :options="options"
             placeholder="Location"
           />
-        </Control>
-        <Control v-if="!props.compact">
-          <VSelect
-            :options="options"
-            placeholder="Salary"
-          />
-        </Control>
-        <Control>
-          <VSelect
-            :options="options"
-            placeholder="All"
-          />
-        </Control>
+        </Control> -->
+        
         <Control>
           <Button
             color="primary"
             :long="2"
             bold
             raised
+            disabled
           >
             Search
           </Button>

@@ -73,17 +73,28 @@ const countdownClasses = computed(() => [
         <span :id="`seconds-${countDown}`">{{ currentSeconds }}</span>
         Seconds
       </li>
+      <li>
+        <span><b>Until </b></span>
+        Launch
+      </li>
     </ul>
   </div>
 </template>
 
 <style scoped lang="scss">
 .countdown {
+  display: flex;
+  justify-content: center;  // Center horizontally
+  align-items: center;      // Center vertically
+  flex-direction: column;   // Align items in a column
+  text-align: center;       // Center text within each list item
+  
   &.is-inverted {
     li {
       color: var(--white-smoke);
     }
   }
+
 
   &.is-bold {
     li {
@@ -105,7 +116,7 @@ const countdownClasses = computed(() => [
     display: inline-block;
     font-family: var(--font);
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 2rem;
     list-style-type: none;
     padding: 1em;
     text-transform: uppercase;

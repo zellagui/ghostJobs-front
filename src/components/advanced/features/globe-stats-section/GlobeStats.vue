@@ -16,7 +16,7 @@
           <div class="block-inner">
             <Title
               tag="h3"
-              :size="1"
+              :size="4"
               weight="bold"
               narrow
             >
@@ -33,7 +33,7 @@
           <div class="block-inner">
             <Title
               tag="h3"
-              :size="1"
+              :size="4"
               weight="bold"
               narrow
             >
@@ -50,7 +50,7 @@
           <div class="block-inner">
             <Title
               tag="h3"
-              :size="1"
+              :size="4"
               weight="bold"
               narrow
             >
@@ -67,7 +67,7 @@
           <div class="block-inner">
             <Title
               tag="h3"
-              :size="1"
+              :size="4"
               weight="bold"
               narrow
             >
@@ -90,7 +90,7 @@
   position: relative;
 
   .globe-holder {
-    height: 450px;
+    height: 300px;
     width: 100%;
     margin-top: -100px;
     overflow: hidden;

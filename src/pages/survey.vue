@@ -2,7 +2,11 @@
 import { countries as staticCountries } from '../data/country/countries';
 
 import { ref } from 'vue'
-// import 
+
+const webhook = 'https://hook.us1.make.com/mrtf37v0nrvesbcdmlvwnlp9qui1zpgw';
+
+const isSubmitted = ref(false); // Track form submission state
+
 
 const countries = ref(staticCountries);
 const name = ref('')
@@ -92,9 +96,8 @@ const usefulFeaturesOptions = [
   { label: "Automated applicant campaigns (i.e. automated applications, company email sequencing, etc..)", value: "automated_campaigns" }
 ];
 
-const handleSubmit = () => {
-  // Handle the form submission logic
-  console.log('Form submitted:', {
+const handleSubmit = async () => {
+  const formData = {
     name: name.value,
     email: email.value,
     selectedCountry: selectedCountry.value,
@@ -108,8 +111,29 @@ const handleSubmit = () => {
     anonymousForumInterest: anonymousForumInterest.value,
     freeVersionInterest: freeVersionInterest.value,
     subscriptionLikelihood: subscriptionLikelihood.value,
-    additionalComments: additionalComments.value
-  });
+    additionalComments: additionalComments.value,
+  };
+
+  try {
+    const response = await fetch(webhook, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      console.log('Data sent successfully');
+      isSubmitted.value = true; // Set submission state to true
+    } else {
+      console.error(`Failed to send data: ${response.status} - ${response.statusText}`);
+      const errorDetails = await response.json(); // Optional: Get additional error details from the response body
+      console.error('Error details:', errorDetails);
+    }
+  } catch (error) {
+    console.error('Error sending data:', error);
+  }
 };
 </script>
 
@@ -132,7 +156,18 @@ const handleSubmit = () => {
           Take part in our community survey and join our wait list.
         </p>
   
-        <form @submit.prevent="handleSubmit">
+        <!-- Show Thank You Message After Submission -->
+        <div v-if="isSubmitted">
+          <p class="thank-you-message">
+            Thank you for completing the survey! Your feedback is valuable to us, and it will help us improve our services. We appreciate your time and effort.
+          </p>
+        </div>
+
+        <!-- Show Form if Not Submitted -->
+        <form
+          v-else
+          @submit.prevent="handleSubmit"
+        >
           <!-- Name Field -->
           <Field>
             <FieldLabel label="Name" />
