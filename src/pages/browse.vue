@@ -81,16 +81,6 @@
 
         <FullJobSearch />
         <Countdown date="Sep 30, 2024" />
-        
-        <!-- <JobGrid :jobs="jobs" /> -->
-        <br>
-      </Container>
-    </Section>
-
-    <br>
-   
-    <Section>
-      <Container>
         <div class="box-carousel-title max-w-7 mb-6">
           <Subtitle
             tag="h3"
@@ -127,53 +117,46 @@
           reverse
           blob
         />
+
+        <Container>
+          <SideSection
+            subtitle="Assistance"
+            title="Mentors will apply to help you"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Ad eas enim res ab Epicuro praecepta dantur."
+            cta="Learn More"
+            to="index"
+            image="/assets/illustrations/features/advisors-feature-3.png"
+            dark-image="/assets/illustrations/features/advisors-feature-3-dark.png"
+            image-width="776"
+            image-height="647"
+            blob
+          />
+        </Container>
+        <!-- <JobGrid :jobs="jobs" /> -->
+        <br>
+        <Container>
+          <SectionTitle
+            title="A Solution for each use case"
+            subtitle="Business solutions"
+          />
+
+          <PulseCards
+            :features="businessSolutions"
+            links
+            animated
+          />
+        </Container>
       </Container>
     </Section>
 
-    <Section>
-      <Container>
-        <SideSection
-          subtitle="Assistance"
-          title="Mentors will apply to help you"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Ad eas enim res ab Epicuro praecepta dantur."
-          cta="Learn More"
-          to="index"
-          image="/assets/illustrations/features/advisors-feature-3.png"
-          dark-image="/assets/illustrations/features/advisors-feature-3-dark.png"
-          image-width="776"
-          image-height="647"
-          blob
-        />
-      </Container>
-    </Section>
-
-    <Section
-      wave="wave-2"
-      shape-color="darker"
-    >
-      <Container>
-        <SideSection
-          subtitle="Subscriptions"
-          title="Go beyond one-off calls and seminars"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Ad eas enim res ab Epicuro praecepta dantur."
-          cta="Learn More"
-          to="index"
-          image="/assets/illustrations/features/advisors-feature-4.png"
-          dark-image="/assets/illustrations/features/advisors-feature-4-dark.png"
-          image-width="776"
-          image-height="647"
-          reverse
-          blob
-        />
-      </Container>
-    </Section>
-
+   
+   
     
     
-    <FooterD
+    <FooterA
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
                   non possum. Apparet statim, quae sint officia, quae actiones."
-      color="dark"
+      color="grey"
       :social-links="socialLinks"
     />
   </div>
