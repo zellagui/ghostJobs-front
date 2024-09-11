@@ -6,6 +6,9 @@ import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createRouter } from '/@src/router'
 import VulkApp from '/@src/VulkApp.vue'
 import '/@src/styles'
+import { inject } from "@vercel/analytics"
+
+inject()
 
 const plugins = import.meta.glob<{ default: VulkPlugin }>('./plugins/*.ts')
 
