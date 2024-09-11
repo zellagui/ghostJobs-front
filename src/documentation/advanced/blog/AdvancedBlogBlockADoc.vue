@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { demoPosts1, demoPosts2 } from '/@src/data/pages/blog'
 import {
   blogPostsBlockA,
@@ -86,4 +86,4 @@ import {
       </DemoTabs>
     </Container>
   </Section>
-</template>
+</template> -->
