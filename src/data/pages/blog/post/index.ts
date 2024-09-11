@@ -3,7 +3,7 @@ import type { PostItem } from '/@src/components/advanced/blog/blog-grid-item/Blo
 export const post: PostItem = {
   id: 7,
   image: '/assets/posts/post-1.svg',
-  title: 'How 3D and augmented reality are changing our world',
+  title: '1111How 3D and augmented reality are changing our world',
   category: 'Technology',
   abstract:
     'In 2022, ecommerce is thriving like never before, and Amazon is the leading marketplace. If you’re...',
@@ -18,6 +18,7 @@ export const post: PostItem = {
   related: [
     {
       id: 1,
+      slug:2,
       image: '/assets/posts/post-2.svg',
       title: 'Fighting stress when preparing yourself for an interview',
       abstract:

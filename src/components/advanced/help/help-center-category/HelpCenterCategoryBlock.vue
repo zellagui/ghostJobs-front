@@ -45,7 +45,7 @@ const props = defineProps<HelpCenterCategoryBlockProps>()
             {{ props.category.text }}
           </div>
           <div class="card-meta">
-            <img
+            <!-- <img
               v-for="(contributor, c) in props.category.contributors.slice(
                 0,
                 2,
@@ -54,7 +54,7 @@ const props = defineProps<HelpCenterCategoryBlockProps>()
               class="small-avatar"
               :src="contributor.picture"
               alt="Contributor picture"
-            >
+            > -->
             <div class="meta-info">
               <div class="articles-number">
                 {{ props.category.articles.length }} articles in this section
@@ -62,14 +62,7 @@ const props = defineProps<HelpCenterCategoryBlockProps>()
               <div class="authors">
                 Written by
                 <span class="contributor-name">
-                  {{ props.category.contributors[0].name }}
-                </span>
-                <span v-if="props.category.contributors.length > 1">
-                  and {{ props.category.contributors.length - 1 }}
-                  <span v-if="props.category.contributors.length - 2 < 1">
-                    other
-                  </span>
-                  <span v-else>others</span>
+                  GhostJobs
                 </span>
               </div>
             </div>
@@ -102,19 +95,19 @@ const props = defineProps<HelpCenterCategoryBlockProps>()
                 {{ article.abstract }}
               </div>
               <div class="card-meta">
-                <img
+                <!-- <img
                   class="small-avatar"
                   :src="article.author.picture"
                   alt="Article author"
-                >
+                > -->
                 <div class="meta-info">
                   <div class="author">
                     Written by
-                    <span>{{ article.author.name }}</span>
+                    <span>GhostJobs</span>
                   </div>
-                  <div class="status">
+                  <!-- <div class="status">
                     Updated about {{ article.updated }}
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

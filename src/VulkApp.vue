@@ -3,9 +3,13 @@ import VulkLayout from '/@src/layouts/default.vue'
 import config from '/@src/app.config'
 import { useI18n } from 'vue-i18n'
 import { initDarkmode } from '/@src/stores/darkmode'
+import { inject } from "@vercel/analytics"
 
 const route = useRoute()
 const { locale } = useI18n()
+
+inject();
+
 
 const rtlCodes = [
   'ar',

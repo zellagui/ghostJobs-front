@@ -31,5 +31,11 @@ export function generateStaticParams(): Record<
 
       return articles.map((article) => ({ slug: article.slug }))
     },
-  }
+    '/subpages/blog/posts/[slug]': async () => {
+      const posts = await import('./src/data/pages/blog/').then(
+        (module) => module.posts
+      )
+      return posts.map((post) => ({ id: post.slug }))
+  },
+}
 }

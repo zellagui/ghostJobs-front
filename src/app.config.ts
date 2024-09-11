@@ -82,7 +82,7 @@ export default {
           },
           {
             label: 'Blog',
-            to: 'blog-page',
+            to: 'blog',
           },
           // {
           //   label: 'Contact Us',

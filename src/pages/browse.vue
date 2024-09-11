@@ -81,6 +81,8 @@
 
         <FullJobSearch />
         <Countdown date="Sep 30, 2024" />
+
+        <br>
         <div class="box-carousel-title max-w-7 mb-6">
           <Subtitle
             tag="h3"

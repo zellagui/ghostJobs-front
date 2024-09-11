@@ -64,7 +64,7 @@ const props = withDefaults(defineProps<HelpCenterHeaderProps>(), {
               <span>{{ topic.title }}</span>
             </Title>
             <p class="paragraph rem-85">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              hi ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </RouterLink>
         </div>

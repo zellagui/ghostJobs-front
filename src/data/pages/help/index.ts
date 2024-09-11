@@ -1,3 +1,12 @@
+import {article_cover} from './application-category/article_cover'
+import { article_application } from './application-category/article_application_master'
+import { article_resume101 } from './application-category/articles_resume101'
+import { article_prep } from './application-category/article_prep'
+import { article_portfolio } from './application-category/article_portfolio'
+import { article_career_tips } from './career-category/article_career-tips'
+import { article_linkedin_tips } from './career-category/article_linkedin_tips'
+
+import { article_ideal_career } from './career-category/article_ideal_career'
 export const markdownObject = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
 
@@ -22,6 +31,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praes
 *   Add users to your team
 *   Start working
 `
+
+
 
 export const helpCenterTopics = [
   {
@@ -59,8 +70,8 @@ export const helpCenterCategories = [
     slug: 'welcome-category',
     icon: 'ph:hand-waving-duotone',
     iconColor: 'yellow',
-    name: 'Welcome',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+    name: 'Community Guideline',
+    text: 'Tap into our resources, connect with the community, and join the movement.',
     contributors: [
       {
         name: 'Edwin Tyler',
@@ -102,40 +113,14 @@ export const helpCenterCategories = [
         },
         content: markdownObject,
       },
-      {
-        slug: 'creating-an-account',
-        title: 'Creating an account',
-        subtitle: 'Create your account and fill in required info',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'about 3 weeks ago',
-        author: {
-          name: 'Helen Miller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'creating-a-company',
-        title: 'Creating a company',
-        subtitle: 'Setup your company account to start adding products',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'about 3 weeks ago',
-        author: {
-          name: 'Helen Miller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
     ],
   },
   {
-    slug: 'project-module-category',
-    icon: 'ph:folder-simple-dotted-duotone',
+    slug: 'career-networking',
+    icon: 'ph:users-four',
     iconColor: 'success',
-    name: 'Projects Module',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+    name: 'Career Development and Networking',
+    text: 'Grow your career with networking strategies, online presence tips, and ethical job guidance.',
     contributors: [
       {
         name: 'Jake Rowland',
@@ -148,78 +133,50 @@ export const helpCenterCategories = [
     ],
     articles: [
       {
-        slug: 'creating-a-project',
-        title: 'Creating a project',
-        subtitle: 'Create your first project and start adding tasks',
+        slug: 'networking-for-career-success',
+        title: 'Networking for Career Success',
+        subtitle: 'Master the art of networking with effective outreach strategies',
         abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one month ago',
+          'Networking is a powerful tool for career advancement. Learn how to effectively reach out to new connections through cold, warm, and hot outreach, and explore tips to expand your professional network.',
+        updated: 'recently',
         author: {
-          name: 'Jake Rowland',
-          picture: 'data:image/gif;base64,replace_with_your_image',
+          name: 'Your Name',  // Replace with your actual name
+          picture: 'data:image/gif;base64,replace_with_your_image',  // Replace with your actual image data
         },
-        content: markdownObject,
+        content: article_career_tips,
       },
       {
-        slug: 'managing-tasks',
-        title: 'Managing tasks',
-        subtitle: 'Assign, revoke and manage your tasks',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
+        slug: 'optimizing-your-linkedin-profile',
+        title: 'Optimizing Your LinkedIn Profile',
+        subtitle: 'Enhance your LinkedIn profile to attract recruiters and job opportunities',
+        abstract: 'Learn how to optimize your LinkedIn profile to increase visibility and attract recruiters with key tips and strategies.',
+        updated: 'recently',
         author: {
-          name: 'Helen Miller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
+          name: 'Your Name',  // Replace with your actual name
+          picture: 'data:image/gif;base64,replace_with_your_image',  // Replace with your actual image data
         },
-        content: markdownObject,
+        content: article_linkedin_tips,
       },
       {
-        slug: 'uploading-attachments',
-        title: 'Uploading attachments',
-        subtitle: 'Start uploading documents, images and videos',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: '2 weeks ago',
+        slug: 'finding-your-ideal-next-career',
+        title: 'Your Ideal Next Career: How to Find the Right Company',
+        subtitle: 'Steps to identify the right company and position that aligns with your career goals',
+        abstract: 'Learn how to define your ideal company, identify the right skills for your next position.',
+        updated: 'recently',
         author: {
-          name: 'Helen Miller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
+          name: 'Your Name',  // Replace with your actual name
+          picture: 'data:image/gif;base64,replace_with_your_image',  // Replace with your actual image data
         },
-        content: markdownObject,
-      },
-      {
-        slug: 'managing-user-access',
-        title: 'Managing user access',
-        subtitle: 'Manage permissions and user rights',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Jake Rowland',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'configuring-a-gantt-view',
-        title: 'Configuring a Gantt view',
-        subtitle: 'Plan efficiently by using the built-in Gantt view',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Jake Rowland',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
+        content: article_ideal_career,
+      }
     ],
   },
   {
-    slug: 'sales-module-category',
-    icon: 'ph:t-shirt-duotone',
+    slug: 'job-application-interview',
+    icon: 'ph:read-cv-logo',
     iconColor: 'secondary',
-    name: 'Sales Module',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+    name: 'Job Application and Interview',
+    text: 'Expert tips on resumes, cover letters, interviews, and portfolios to boost your job hunt.',
     contributors: [
       {
         name: 'Christina Chu',
@@ -236,247 +193,67 @@ export const helpCenterCategories = [
     ],
     articles: [
       {
-        slug: 'setting-up-cutomer-payments',
-        title: 'Setting up customer payments',
-        subtitle: 'Learn how to enable payments on your storefront',
+        slug: 'cover-letters',
+        title: 'Cover Letters',
+        subtitle: 'Cover Letters: Should You Use Them? When and How to Make Them Work for You',
         abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+          'Cover Letters: Should You Use Them? When and How to Make Them Work for You',
         updated: '3 weeks ago',
         author: {
           name: 'Christina Chu',
           picture: 'data:image/gif;base64,replace_with_your_image',
         },
-        content: markdownObject,
+        content: article_cover,
       },
       {
-        slug: 'configuring-customer-registration',
-        title: 'Configuring customer registration',
-        subtitle: 'Configure how users are getting registered on the store',
+        slug: 'master-application-process',
+        title: 'Mastering the Job Application Process',
+        subtitle: 'Advanced Tips, Tools, and Strategies for Success',
         abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+          'Mastering the Job Application Process: Advanced Tips, Tools, and Strategies for Success',
         updated: 'one week ago',
         author: {
           name: 'Pete Jackson',
           picture: 'data:image/gif;base64,replace_with_your_image',
         },
-        content: markdownObject,
+        content: article_application,
       },
       {
-        slug: 'adding-products',
-        title: 'Adding products',
-        subtitle: 'Add your first products to the catalogue',
+        slug: 'resume-101',
+        title: 'Resumes 101: Best Practices',
+        subtitle: 'Unlock the Secrets to Crafting a Resume That Stands Out to Recruiters and ATS Systems Alike',
         abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: '3 days ago',
-        author: {
-          name: 'Christina Chu',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'creating-product-variants',
-        title: 'Creating product variants',
-        subtitle: 'Making your first steps',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
+          'Unlock the Secrets to Crafting a Resume That Stands Out to Recruiters and ATS Systems Alike',
         updated: 'one week ago',
         author: {
-          name: 'Ina Volkov',
+          name: 'Pete Jackson',
           picture: 'data:image/gif;base64,replace_with_your_image',
         },
-        content: markdownObject,
+        content: article_resume101,
       },
       {
-        slug: 'managing-product-variants',
-        title: 'Managing product variants',
-        subtitle: 'Making your first steps',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Ina Volkov',
-          picture: 'data:image/gif;base64,replace_with_your_image',
+        "slug": "interview-preparation",
+        "title": "Interview Preparation: Navigating Different Interview Types",
+        "subtitle": "Master the Art of Interviews with Targeted Strategies for Every Interview Type",
+        "abstract": "Learn how to excel in various interview formats with targeted strategies and common questions answered.",
+        "updated": "one week ago",
+        "author": {
+          "name": "Pete Jackson",
+          "picture": "data:image/gif;base64,replace_with_your_image"
         },
-        content: markdownObject,
-      },
-    ],
-  },
-  {
-    slug: 'marketing-module-category',
-    icon: 'ph:megaphone-simple-duotone',
-    iconColor: 'info',
-    name: 'Marketing Module',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-    contributors: [
-      {
-        name: 'Mike Wilson',
-        picture: 'data:image/gif;base64,replace_with_your_image',
+        "content": article_prep
       },
       {
-        name: 'Eddie Bricks',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-      {
-        name: 'Jake Rowland',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-    ],
-    articles: [
-      {
-        slug: 'collecting-campaign-audience',
-        title: 'Collecting campaign audience',
-        subtitle: 'Learn how to make people subscribe',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one day ago',
-        author: {
-          name: 'Mike Wilson',
-          picture: 'data:image/gif;base64,replace_with_your_image',
+        "slug": "online-portfolio",
+        "title": "Creating an Online Portfolio: Your Guide to Building a Personal Website",
+        "subtitle": "Build a Professional Online Portfolio That Showcases Your Work and Personal Brand",
+        "abstract": "A step-by-step guide to creating a professional online portfolio, including essential elements, tools, and best practices.",
+        "updated": "one week ago",
+        "author": {
+          "name": "Pete Jackson",
+          "picture": "data:image/gif;base64,replace_with_your_image"
         },
-        content: markdownObject,
-      },
-      {
-        slug: 'creating-customer-segments',
-        title: 'Creating customer segments',
-        subtitle: 'Learn more about customer segmentation',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: '2 weeks ago',
-        author: {
-          name: 'Mike Wilson',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'run-your-first-campaign',
-        title: 'Run your first campaign',
-        subtitle: 'Run your first mailing campaign',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Eddie Bricks',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'creating-a-custom-template',
-        title: 'Creating a custom template',
-        subtitle: 'Create a custom email template with your own elements',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Jake Rowland',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-    ],
-  },
-  {
-    slug: 'production-module-category',
-    icon: 'ph:factory-duotone',
-    iconColor: 'warning',
-    name: 'Production Module',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-    contributors: [
-      {
-        name: 'Sara Gheller',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-    ],
-    articles: [
-      {
-        slug: 'creating-a-production-unit',
-        title: 'Creating a production unit',
-        subtitle: 'Learn how to create and manage a production unit',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one hour ago',
-        author: {
-          name: 'Sara Gheller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'creating-a-supply-chain',
-        title: 'Creating a supply chain',
-        subtitle: 'Learn how to create and manage a supply chain',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one day ago',
-        author: {
-          name: 'Sara Gheller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-    ],
-  },
-  {
-    slug: 'delivery-module-category',
-    icon: 'ph:truck-duotone',
-    iconColor: 'purple',
-    name: 'Delivery Module',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-    contributors: [
-      {
-        name: 'Jake Rowland',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-      {
-        name: 'Edwin Tyler',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-      {
-        name: 'Helen Miller',
-        picture: 'data:image/gif;base64,replace_with_your_image',
-      },
-    ],
-    articles: [
-      {
-        slug: 'creating-your-fleet',
-        title: 'Creating your fleet',
-        subtitle: 'Create your fleet and set global rules',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: '5 days ago',
-        author: {
-          name: 'Helen Miller',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'adding-vehicles',
-        title: 'Adding vehicles',
-        subtitle: 'Dive in fleet vehicle management',
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: 'one week ago',
-        author: {
-          name: 'Jake Rowland',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
-      },
-      {
-        slug: 'track-your-fleet',
-        title: 'Track your fleet',
-        subtitle: "Learn more on how to track your fleet's performance",
-        abstract:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quorum altera prosunt, nocent altera. Restinguet citius, si ardentem acceperit inde igitur inquit.',
-        updated: '8 hours ago',
-        author: {
-          name: 'Edwin Tyler',
-          picture: 'data:image/gif;base64,replace_with_your_image',
-        },
-        content: markdownObject,
+        "content": article_portfolio
       },
     ],
   },

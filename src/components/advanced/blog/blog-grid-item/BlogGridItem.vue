@@ -9,6 +9,7 @@ export interface PostGridItemAuthor {
 
 export interface PostItem {
   id: number
+  slug: string
   author: PostGridItemAuthor
   category: string
   title: string
@@ -81,7 +82,7 @@ const props = withDefaults(defineProps<PostItemProps>(), {
       >
         <div>
           <RouterLink
-            to="/blog/post/"
+            to="/blog/post2/"
             class="is-flex is-align-items-center"
           >
             <span class="mr-2">Read More</span>

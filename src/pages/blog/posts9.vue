@@ -16,7 +16,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         <div class="mx-auto max-w-9">
           <PageTitle
             title="Our Work Resources"
-            subtitle="Tech Blog"
+            subtitle="Stay Informed"
           >
             <template #content>
               <div class="mx-auto max-w-6 mt-2">

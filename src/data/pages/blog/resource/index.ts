@@ -15,23 +15,23 @@ export const resources = [
         name: 'Apps',
       },
     ],
-    date: 'March 24th, 2022',
+    date: 'September 5th, 2024',
     duration: 2,
   },
   {
     id: 1,
     image: '/assets/posts/post-14.svg',
-    title: 'All you need to know about the One-on-One meeting',
+    title: 'Mastering the Job Application Process: Advanced Tips, Tools, and Strategies for Success',
     likes: '93',
     categories: [
       {
         name: 'Technique',
       },
       {
-        name: 'Speech',
+        name: 'Process',
       },
       {
-        name: 'work',
+        name: 'Application',
       },
     ],
     date: 'March 18th, 2022',
@@ -40,7 +40,7 @@ export const resources = [
   {
     id: 2,
     image: '/assets/posts/post-15.svg',
-    title: 'How networking will help boost your company growth',
+    title: 'Networking for Career Success: Strategies for Cold, Warm, and Hot Outreach',
     likes: '54',
     categories: [
       {
@@ -151,80 +151,80 @@ export const resources = [
     date: 'Feb 25, 2022',
     duration: 2,
   },
-  {
-    id: 8,
-    image: '/assets/posts/post-21.svg',
-    title: 'Introduction on how to conduct business in Middle-East',
-    likes: '541',
-    categories: [
-      {
-        name: 'Business',
-      },
-      {
-        name: 'Coaching',
-      },
-      {
-        name: 'MENA',
-      },
-    ],
-    date: 'Feb 22, 2022',
-    duration: 2,
-  },
-  {
-    id: 9,
-    image: '/assets/posts/post-22.svg',
-    title: 'Do not fail with your next employee onboarding operation',
-    likes: '379',
-    categories: [
-      {
-        name: 'Recruitment',
-      },
-      {
-        name: 'HR',
-      },
-      {
-        name: 'Onboarding',
-      },
-    ],
-    date: 'Feb 19, 2022',
-    duration: 2,
-  },
-  {
-    id: 10,
-    image: '/assets/posts/post-23.svg',
-    title: '5 Tips to boost your career without taking any risk',
-    likes: '611',
-    categories: [
-      {
-        name: 'Careers',
-      },
-      {
-        name: 'HR',
-      },
-      {
-        name: 'Evolution',
-      },
-    ],
-    date: 'Feb 16, 2022',
-    duration: 2,
-  },
-  {
-    id: 11,
-    image: '/assets/posts/post-24.svg',
-    title: 'Customer support is the only thing that will grow your trust',
-    likes: '411',
-    categories: [
-      {
-        name: 'Support',
-      },
-      {
-        name: 'Help',
-      },
-      {
-        name: 'Assistance',
-      },
-    ],
-    date: 'Feb 16, 2022',
-    duration: 2,
-  },
+  // {
+  //   id: 8,
+  //   image: '/assets/posts/post-21.svg',
+  //   title: 'Introduction on how to conduct business in Middle-East',
+  //   likes: '541',
+  //   categories: [
+  //     {
+  //       name: 'Business',
+  //     },
+  //     {
+  //       name: 'Coaching',
+  //     },
+  //     {
+  //       name: 'MENA',
+  //     },
+  //   ],
+  //   date: 'Feb 22, 2022',
+  //   duration: 2,
+  // },
+  // {
+  //   id: 9,
+  //   image: '/assets/posts/post-22.svg',
+  //   title: 'Do not fail with your next employee onboarding operation',
+  //   likes: '379',
+  //   categories: [
+  //     {
+  //       name: 'Recruitment',
+  //     },
+  //     {
+  //       name: 'HR',
+  //     },
+  //     {
+  //       name: 'Onboarding',
+  //     },
+  //   ],
+  //   date: 'Feb 19, 2022',
+  //   duration: 2,
+  // },
+  // {
+  //   id: 10,
+  //   image: '/assets/posts/post-23.svg',
+  //   title: '5 Tips to boost your career without taking any risk',
+  //   likes: '611',
+  //   categories: [
+  //     {
+  //       name: 'Careers',
+  //     },
+  //     {
+  //       name: 'HR',
+  //     },
+  //     {
+  //       name: 'Evolution',
+  //     },
+  //   ],
+  //   date: 'Feb 16, 2022',
+  //   duration: 2,
+  // },
+  // {
+  //   id: 11,
+  //   image: '/assets/posts/post-24.svg',
+  //   title: 'Customer support is the only thing that will grow your trust',
+  //   likes: '411',
+  //   categories: [
+  //     {
+  //       name: 'Support',
+  //     },
+  //     {
+  //       name: 'Help',
+  //     },
+  //     {
+  //       name: 'Assistance',
+  //     },
+  //   ],
+  //   date: 'Feb 16, 2022',
+  //   duration: 2,
+  // },
 ]

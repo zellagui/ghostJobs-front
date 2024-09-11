@@ -39,7 +39,7 @@ const activeRating = ref('')
         >
           <span>{{ props.article.subtitle }}</span>
         </Subtitle>
-        <div class="article-meta">
+        <!-- <div class="article-meta">
           <img
             class="small-avatar"
             :src="props.article.author.picture"
@@ -54,7 +54,7 @@ const activeRating = ref('')
               Updated {{ props.article.updated }}
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="content">
           <Markdown :source="props.article.content" />

@@ -40,36 +40,6 @@ const props = defineProps<HelpCenterCategoryCardProps>()
               {{ props.category.text }}
             </span>
           </div>
-          <div class="card-meta">
-            <img
-              v-for="(contributor, c) in props.category.contributors.slice(
-                0,
-                2,
-              )"
-              :key="c"
-              class="small-avatar"
-              :src="contributor.picture"
-              alt="Contributor picture"
-            >
-            <div class="meta-info">
-              <div class="articles-number">
-                {{ props.category.articles.length }} articles in this section
-              </div>
-              <div class="authors">
-                Written by
-                <span class="contributor-name">
-                  {{ props.category.contributors[0].name }}
-                </span>
-                <span v-if="props.category.contributors.length > 1">
-                  and {{ props.category.contributors.length - 1 }}
-                  <span v-if="props.category.contributors.length - 2 < 1">
-                    other
-                  </span>
-                  <span v-else>others</span>
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </RouterLink>
     </div>

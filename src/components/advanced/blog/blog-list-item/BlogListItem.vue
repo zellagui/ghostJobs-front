@@ -95,7 +95,7 @@ const blockClasses = computed(() => [props.upsideDown ? 'is-upside-down' : ''])
 
       <div class="post-action">
         <RouterLink
-          to="/blog/"
+          to="/blog/post"
           class="read-more-link"
         >
           Read More
