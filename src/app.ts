@@ -8,8 +8,6 @@ import VulkApp from '/@src/VulkApp.vue'
 import '/@src/styles'
 import { inject } from "@vercel/analytics"
 
-inject()
-
 const plugins = import.meta.glob<{ default: VulkPlugin }>('./plugins/*.ts')
 
 export type VulkAppContext = Awaited<ReturnType<typeof createApp>>
@@ -56,6 +54,10 @@ export async function createApp(ssr = false) {
 
   // use router after plugin registration, so we can register navigation guards
   app.use(router)
+
+ inject()
+
+  
 
   return context
 }
