@@ -1,12 +1,13 @@
-<!-- <script setup lang="ts">
-import { demoPosts1, demoPosts2 } from '/@src/data/pages/blog'
-import {
-  blogPostsBlockA,
-  blogPostsBlockAProps,
-  blogPostsBlockASample,
-} from '/@src/data/docs/advanced/blog/blockA'
+<script setup lang="ts">
+// import { demoPosts1, demoPosts2 } from '/@src/data/pages/blog'
+// import {
+//   blogPostsBlockA,
+//   blogPostsBlockAProps,
+//   blogPostsBlockASample,
+// } from '/@src/data/docs/advanced/blog/blockA'
+console.log('ici');
 </script>
-
+<!--
 <template>
   <Section
     id="block-a-demo"

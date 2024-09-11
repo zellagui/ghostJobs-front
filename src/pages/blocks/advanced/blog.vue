@@ -1,8 +1,8 @@
-<route lang="yaml">
+<!-- <route lang="yaml">
 meta:
   footer:
     enabled: false
-</route>
+</route> -->
 
 <script setup lang="ts">
 import DocumentationFooter from '/@src/documentation/demo/DocumentationFooter.vue'
