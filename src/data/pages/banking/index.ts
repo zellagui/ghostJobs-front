@@ -2,24 +2,24 @@ import type { IconFeature, ImageFeature } from '/@src/types'
 
 export const businessSolutions: ImageFeature[] = [
   {
-    title: 'For Ecommerce',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus Hoc est.',
-    image: '/assets/icons/gradient/banking-gradient-icon-3.svg',
-    darkImage: '/assets/icons/gradient/banking-gradient-icon-3.svg',
+    title: 'Report',
+    text: 'Flag a suspicious job postings.',
+    image: '/images/flag.svg',
+    darkImage: '/images/flag.svg',
+    link: 'https://forms.gle/vnKe7wdRZdbHgrUL6',
+  },
+  {
+    title: 'Browse Postings',
+    text: 'Browse community postings',
+    image: '/images/looping.svg',
+    darkImage: '/images/looping.svg',
     link: '/',
   },
   {
-    title: 'For SaaS',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus Hoc est.',
-    image: '/assets/icons/gradient/banking-gradient-icon-1.svg',
-    darkImage: '/assets/icons/gradient/banking-gradient-icon-1.svg',
-    link: '/',
-  },
-  {
-    title: 'For Payments',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus Hoc est.',
-    image: '/assets/icons/gradient/banking-gradient-icon-2.svg',
-    darkImage: '/assets/icons/gradient/banking-gradient-icon-2.svg',
+    title: 'A Coffee',
+    text: 'Support us with a coffee :)',
+    image: '/images/coffee.svg',
+    darkImage: '/images/coffee.svg',
     link: '/',
   },
 ]

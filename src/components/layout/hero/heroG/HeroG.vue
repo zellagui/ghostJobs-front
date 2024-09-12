@@ -45,108 +45,20 @@ import { customerLogos } from '/@src/data/pages/logos'
             <div class="composition-dot composition-dot-1">
               <i
                 class="iconify"
-                data-icon="ion:leaf-outline"
+                data-icon="ic:outline-more-time"
               />
             </div>
             <div class="composition-dot composition-dot-2">
               <i
                 class="iconify"
-                data-icon="ion:calendar-outline"
+                data-icon="icon-park-twotone:personal-privacy"
               />
             </div>
             <div class="composition-dot composition-dot-3">
               <i
                 class="iconify"
-                data-icon="ion:stopwatch-outline"
+                data-icon="iconoir:community"
               />
-            </div>
-            <!--Blocks-->
-            <div class="composition-block composition-block-1">
-              <div class="composition-card">
-                <Title
-                  tag="h3"
-                  :size="7"
-                  weight="semi"
-                  leading
-                >
-                  Weekly priorities meeting
-                </Title>
-                <div class="is-flex is-align-items-center">
-                  <span class="fake-dot" />
-                  <p class="paragraph rem-85">
-                    Discuss upcoming projects
-                  </p>
-                </div>
-              </div>
-              <div class="composition-avatar">
-                <AvatarSimple
-                  size="medium"
-                  picture="data:image/gif;base64,replace_with_your_image"
-                />
-              </div>
-            </div>
-            <div class="composition-block composition-block-2">
-              <div class="composition-card">
-                <Title
-                  tag="h3"
-                  :size="7"
-                  weight="semi"
-                  leading
-                >
-                  It was a great meeting!
-                </Title>
-                <div class="is-flex is-align-items-center">
-                  <i
-                    class="iconify star-icon"
-                    data-icon="uiw:star-on"
-                  />
-                  <i
-                    class="iconify star-icon"
-                    data-icon="uiw:star-on"
-                  />
-                  <i
-                    class="iconify star-icon"
-                    data-icon="uiw:star-on"
-                  />
-                  <i
-                    class="iconify star-icon"
-                    data-icon="uiw:star-on"
-                  />
-                  <i
-                    class="iconify star-icon"
-                    data-icon="uiw:star-on"
-                  />
-                </div>
-              </div>
-              <div class="composition-avatar">
-                <AvatarSimple
-                  size="medium"
-                  picture="data:image/gif;base64,replace_with_your_image"
-                />
-              </div>
-            </div>
-            <div class="composition-block composition-block-3">
-              <div class="composition-card">
-                <Title
-                  tag="h3"
-                  :size="7"
-                  weight="semi"
-                  leading
-                >
-                  Project review #2
-                </Title>
-                <div class="is-flex is-align-items-center">
-                  <p class="paragraph rem-85">
-                    Team review before launch
-                  </p>
-                </div>
-              </div>
-              <div class="composition-avatar">
-                <AvatarSimple
-                  size="medium"
-                  picture="data:image/gif;base64,replace_with_your_image"
-                />
-              </div>
             </div>
           </div>
         </div>

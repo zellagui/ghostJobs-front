@@ -58,7 +58,7 @@
               :long="3"
               raised
               bold
-              to="blog-page"
+              to="blog"
             >
               See More
             </Button>
@@ -90,30 +90,29 @@
             weight="bold"
             class="pb-2"
           >
-            <span class="text-gradient">WE MAKE IT EASY</span>
+            <span class="text-gradient">Tired of wasting your time chasing ghosts?
+            </span>
           </Subtitle>
           <Title
             tag="h2"
             :size="3"
             weight="bold"
           >
-            <span>No more second-guessing every decision you need to make</span>
+            <span>You deserve transparency in your job search.</span>
           </Title>
           <p class="paragraph rem-115">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam te
-            quidem video minime esse deterritum. Quae cum dixisset, finem ille cum
-            dolor.
+            Empower yourself and others to identify, report, and sidestep suspicious job postings.
           </p>
         </div>
         <br>
         <SideSection
           subtitle="One-on-One"
-          title="Schedule a call real quick"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Ad eas enim res ab Epicuro praecepta dantur."
-          cta="Learn More"
+          title="Track, Report, and Rate Job Listings"
+          content="Access a real-time public database of fake job listings, view company health scores, and protect yourself from scams and wasted applications."
+        
           to="index"
-          image="/assets/illustrations/features/advisors-feature-2.png"
-          dark-image="/assets/illustrations/features/advisors-feature-2-dark.png"
+          image="/images/Flagged.svg"
+          dark-image="/images/Flagged.svg"
           image-width="776"
           image-height="647"
           reverse
@@ -123,12 +122,12 @@
         <Container>
           <SideSection
             subtitle="Assistance"
-            title="Mentors will apply to help you"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quos quidem tibi studiose et diligenter tractandos magnopere censeo. Duo Reges: constructio interrete. Ad eas enim res ab Epicuro praecepta dantur."
-            cta="Learn More"
+            title="Companies Opening History Explorer"
+            content="Access historical job data, view company hiring trends, track re-posts and applicant counts, and make informed job search decisions."
+        
             to="index"
-            image="/assets/illustrations/features/advisors-feature-3.png"
-            dark-image="/assets/illustrations/features/advisors-feature-3-dark.png"
+            image="/images/historical_data.svg"
+            dark-image="/images/historical_data.svg"
             image-width="776"
             image-height="647"
             blob
@@ -136,10 +135,10 @@
         </Container>
         <!-- <JobGrid :jobs="jobs" /> -->
         <br>
+        
         <Container>
           <SectionTitle
-            title="A Solution for each use case"
-            subtitle="Business solutions"
+            title="How to support the movement"
           />
 
           <PulseCards
@@ -148,7 +147,23 @@
             animated
           />
         </Container>
-      </Container>
+        <br>
+        <br>
+
+        <Container>
+          <SectionTitle
+            title="Be our beta user &#8212; It's Free"
+            subtitle="Ready to join us?"
+          />
+
+          <!--Subscribe-->
+          <SubscriptionCompactBlock
+            text="Early user get a private access to the Discord, where your idea's are part of the solution."
+            label="Subscribe"
+            placeholder="Enter your email"
+          />
+        </Container>
+      </container>
     </Section>
 
    

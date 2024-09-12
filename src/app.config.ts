@@ -72,10 +72,7 @@ export default {
             label: 'Home',
             to: '/',
           },
-          {
-            label: 'Browse',
-            to: 'browse',
-          },
+         
           {
             label: 'Survey',
             to: 'survey',
