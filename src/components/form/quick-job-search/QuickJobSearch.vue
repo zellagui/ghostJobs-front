@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const options = [
   {
     value: 'job posting',
@@ -12,30 +14,63 @@ const options = [
     value: 'recruiters',
     label: 'recruiters',
   },
-]
+];
 
+const name = ref('');
+const selectedOption = ref(options[0].value);
+
+const submitForm = async () => {
+  const payload = {
+    name: name.value,
+    option: selectedOption.value,
+  };
+
+  try {
+    const response = await fetch('https://hook.us1.make.com/tjgxlhgou1pv32hbjn4vw5nyjmo5xoey', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to send data to the webhook');
+    }
+
+    // If the submission is successful, redirect the user
+    window.location.href = 'https://forms.gle/7kY88Jh5Z8FfCWR87';
+  } catch (error) {
+    console.error('Error submitting the form:', error);
+    alert('There was an error submitting your report.');
+  }
+};
 </script>
 
 <template>
-  <form>
+  <form @submit.prevent="submitForm">
     <div class="flex-form is-relative z-1">
       <Field grouped>
         <Control
           icon="feather:search"
           expanded
         >
-          <VInput placeholder="Who are you looking to report?" />
+          <VInput
+            v-model="name"
+            placeholder="Who are you looking to report?"
+            required
+          />
         </Control>
         <Control>
           <VSelect
+            v-model="selectedOption"
             :options="options"
-            placeholder="All"
           />
         </Control>
       </Field>
       <div>
         <Button
-          href="https://forms.gle/7kY88Jh5Z8FfCWR87"
+          type="submit"
           color="primary"
           bold
           raised

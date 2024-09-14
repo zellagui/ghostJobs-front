@@ -28,6 +28,11 @@ const footerClasses = computed(() => [
   props.curved && `footer-curved`,
   props.bubbles && 'footer-overflow',
 ])
+
+const isExternal = (url: string) => {
+  // Check if the URL starts with http or https to determine if it's external
+  return url.startsWith('http') || url.startsWith('https');
+};
 </script>
 
 <template>
@@ -46,19 +51,19 @@ const footerClasses = computed(() => [
                 :to="{ name: 'index' }"
                 class="level-item footer-link"
               >
-                Product
+                Home
               </RouterLink>
               <RouterLink
-                :to="{ name: 'index' }"
+                :to="{ name: 'survey' }"
                 class="level-item footer-link"
               >
-                Features
+                Survey
               </RouterLink>
               <RouterLink
-                :to="{ name: 'index' }"
+                :to="{ name: 'blog' }"
                 class="level-item footer-link"
               >
-                Docs
+                Blog
               </RouterLink>
             </slot>
           </div>
@@ -82,23 +87,42 @@ const footerClasses = computed(() => [
             v-if="props.socialLinks"
             class="level is-mobile py-4 mx-auto max-w-1"
           >
-            <RouterLink
+            <template
               v-for="(link, index) in props.socialLinks"
               :key="index"
-              :to="link.url"
-              class="level-item footer-link"
             >
-              <span class="icon">
-                <i
-                  class="iconify"
-                  :data-icon="link.icon"
-                />
-              </span>
-              <span class="is-sr-only">{{ link.name }}</span>
-            </RouterLink>
+              <RouterLink
+                v-if="!isExternal(link.url)"
+                :to="link.url"
+                class="level-item footer-link"
+              >
+                <span class="icon">
+                  <i
+                    class="iconify"
+                    :data-icon="link.icon"
+                  />
+                </span>
+                <span class="is-sr-only">{{ link.name }}</span>
+              </RouterLink>
+              <a
+                v-else
+                :href="link.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="level-item footer-link"
+              >
+                <span class="icon">
+                  <i
+                    class="iconify"
+                    :data-icon="link.icon"
+                  />
+                </span>
+                <span class="is-sr-only">{{ link.name }}</span>
+              </a>
+            </template>
           </div>
         </div>
-        <div class="column is-4 has-text-right">
+        <!-- <div class="column is-4 has-text-right">
           <div class="level is-mobile">
             <slot name="rightLinks">
               <RouterLink
@@ -121,7 +145,7 @@ const footerClasses = computed(() => [
               </RouterLink>
             </slot>
           </div>
-        </div>
+        </div> -->
       </div>
       <p class="paragraph rem-90 footer-text has-text-centered is-6">
         <span

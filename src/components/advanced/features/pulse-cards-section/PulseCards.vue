@@ -57,7 +57,7 @@ const boxClasses = computed(() => [props.animated && `animated`])
             </p>
             <Button
               v-if="props.links"
-              :to="feature.link"
+              :href="feature.link"
               :long="3"
             >
               <span>Get Started</span>

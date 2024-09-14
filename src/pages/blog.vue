@@ -16,16 +16,14 @@
     <Container>
       <div class="mx-auto max-w-9">
         <PageTitle
-          title="Our Work Resources"
-          subtitle="Stay Informed"
+          title="Receive an early invite"
+          subtitle="Ready to join us ?"
         >
           <template #content>
             <div class="mx-auto max-w-6 mt-2">
-              <p class="paragraph rem-115">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vides, quid faciat. Mihi vero, inquit, placet agi subtilius
-                et, ut ipse.
-              </p>
+              <!-- <p class="paragraph rem-115">
+                Early user get a private access to the Discord, where your idea's are part of the solution.
+              </p> -->
             </div>
 
             <div class="mx-auto max-w-4 mt-4">
@@ -76,5 +74,11 @@
       :social-links="socialLinks"
     /> -->
   </div>
+  <FooterA
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
+                non possum. Apparet statim, quae sint officia, quae actiones."
+    color="grey"
+    :social-links="socialLinks"
+  />
 </template>
     

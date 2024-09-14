@@ -9,9 +9,9 @@ import type { VulkConfig } from '/@src/types'
 import Navbar from '/@src/components/navigation/navbar/Navbar.vue'
 
 // Additonal megamenu components required by the Navbar
-import CompanyMegamenu from '/@src/components/navigation/navbar/megamenu/CompanyMegamenu.vue'
-import ProductMegamenu from '/@src/components/navigation/navbar/megamenu/ProductMegamenu.vue'
-import ResourcesMegamenu from '/@src/components/navigation/navbar/megamenu/ResourcesMegamenu.vue'
+// import CompanyMegamenu from '/@src/components/navigation/navbar/megamenu/CompanyMegamenu.vue'
+// import ProductMegamenu from '/@src/components/navigation/navbar/megamenu/ProductMegamenu.vue'
+// import ResourcesMegamenu from '/@src/components/navigation/navbar/megamenu/ResourcesMegamenu.vue'
 
 /**
  * Set your default Footer by importing a vue component

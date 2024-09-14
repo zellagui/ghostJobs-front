@@ -6,12 +6,12 @@ export const socialLinks = [
   },
   {
     name: 'Linkedin',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/company/104921225',
     icon: 'fa:linkedin',
   },
   {
     name: 'Instagram',
-    url: 'https://github.com',
+    url: 'https://www.instagram.com/ghostjobs_/',
     icon: 'fa:instagram',
   },
 ]
