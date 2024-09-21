@@ -18,7 +18,7 @@ export interface FooterAProps {
 
 const props = withDefaults(defineProps<FooterAProps>(), {
   color: undefined,
-  socialLinks: undefined,
+  socialLinks: undefined, // Pass your social links as a prop or define default links here
   bubbles: false,
   curved: false,
 })
@@ -28,11 +28,6 @@ const footerClasses = computed(() => [
   props.curved && `footer-curved`,
   props.bubbles && 'footer-overflow',
 ])
-
-const isExternal = (url: string) => {
-  // Check if the URL starts with http or https to determine if it's external
-  return url.startsWith('http') || url.startsWith('https');
-};
 </script>
 
 <template>
@@ -44,6 +39,7 @@ const isExternal = (url: string) => {
 
     <div class="container">
       <div class="columns is-vcentered b-flex-tablet-p">
+        <!-- Left Column -->
         <div class="column is-4">
           <div class="level is-mobile mobile:mb-4">
             <slot name="leftLinks">
@@ -54,20 +50,22 @@ const isExternal = (url: string) => {
                 Home
               </RouterLink>
               <RouterLink
-                :to="{ name: 'survey' }"
-                class="level-item footer-link"
-              >
-                Survey
-              </RouterLink>
-              <RouterLink
                 :to="{ name: 'blog' }"
                 class="level-item footer-link"
               >
-                Blog
+                Job hacks
+              </RouterLink>
+              <RouterLink
+                :to="{ name: 'contact-us' }"
+                class="level-item footer-link"
+              >
+                Contact
               </RouterLink>
             </slot>
           </div>
         </div>
+
+        <!-- Middle Column -->
         <div class="column is-4 has-text-centered">
           <RouterLink
             class="footer-logo-centered"
@@ -83,69 +81,32 @@ const isExternal = (url: string) => {
             />
             <span class="is-sr-only">Logo</span>
           </RouterLink>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column is-4 has-text-right">
           <div
             v-if="props.socialLinks"
-            class="level is-mobile py-4 mx-auto max-w-1"
+            class="level is-mobile"
           >
-            <template
+            <a
               v-for="(link, index) in props.socialLinks"
               :key="index"
+              :href="link.url"
+              class="level-item footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <RouterLink
-                v-if="!isExternal(link.url)"
-                :to="link.url"
-                class="level-item footer-link"
-              >
-                <span class="icon">
-                  <i
-                    class="iconify"
-                    :data-icon="link.icon"
-                  />
-                </span>
-                <span class="is-sr-only">{{ link.name }}</span>
-              </RouterLink>
-              <a
-                v-else
-                :href="link.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="level-item footer-link"
-              >
-                <span class="icon">
-                  <i
-                    class="iconify"
-                    :data-icon="link.icon"
-                  />
-                </span>
-                <span class="is-sr-only">{{ link.name }}</span>
-              </a>
-            </template>
+              <span class="icon">
+                <i
+                  class="iconify"
+                  :data-icon="link.icon"
+                />
+              </span>
+              <span class="is-sr-only">{{ link.name }}</span>
+            </a>
           </div>
         </div>
-        <!-- <div class="column is-4 has-text-right">
-          <div class="level is-mobile">
-            <slot name="rightLinks">
-              <RouterLink
-                :to="{ name: 'index' }"
-                class="level-item footer-link"
-              >
-                Company
-              </RouterLink>
-              <RouterLink
-                :to="{ name: 'index' }"
-                class="level-item footer-link"
-              >
-                About
-              </RouterLink>
-              <RouterLink
-                :to="{ name: 'index' }"
-                class="level-item footer-link"
-              >
-                Support
-              </RouterLink>
-            </slot>
-          </div>
-        </div> -->
       </div>
       <p class="paragraph rem-90 footer-text has-text-centered is-6">
         <span

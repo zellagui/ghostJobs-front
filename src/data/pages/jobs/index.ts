@@ -882,14 +882,14 @@ export const jobTopics = [
 export const jobCategories: IconFeature[] = [
   {
     title: 'Vague Descriptions',
-    text: 'Job lacks clear roles, responsibilities, or qualifications, making the position unclear.',
+    text: 'The job lacks clear roles, responsibilities, or qualifications, making the position unclear.',
     color: 'primary',
     icon: 'ph:read-cv-logo',
     link: '/',
   },
   {
     title: 'Discriminatory Language',
-    text: ' Uses language that discriminates based on personal characteristics.',
+    text: 'Uses language that discriminates based on personal characteristics.',
     color: 'success',
     icon: 'ph:address-book',
     link: '/',
@@ -903,13 +903,13 @@ export const jobCategories: IconFeature[] = [
   },
   {
     title: 'Privacy Concerns',
-    text: 'No clear information on how personal data will be used or protected..',
+    text: 'No clear information on how personal data will be used or protected.',
     color: 'purple',
     icon: 'ph:lock-simple-open',
     link: '/',
   },
   {
-    title: 'No Other Accessibilityt',
+    title: 'Lack of Accessibility',
     text: 'Posting isn’t accessible to individuals with disabilities, lacking alternative formats.',
     color: 'yellow',
     icon: 'ph:door',

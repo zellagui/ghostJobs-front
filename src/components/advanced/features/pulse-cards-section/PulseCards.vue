@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { RouterLink } from 'vue-router'
 import type { ImageFeature } from '/@src/types'
+
+// Your existing imports and code...
 
 export interface PulseCardsProps {
   features: ImageFeature[]
@@ -14,6 +18,11 @@ const props = withDefaults(defineProps<PulseCardsProps>(), {
   animated: false,
 })
 const boxClasses = computed(() => [props.animated && `animated`])
+
+// Utility function to check if the link is external
+const isExternal = (url: string) => {
+  return /^(https?:|mailto:|tel:)/.test(url)
+}
 </script>
 
 <template>
@@ -55,13 +64,27 @@ const boxClasses = computed(() => [props.animated && `animated`])
             <p class="paragraph rem-90 mb-4">
               {{ feature.text }}
             </p>
-            <Button
-              v-if="props.links"
-              :href="feature.link"
-              :long="3"
-            >
-              <span>Get Started</span>
-            </Button>
+
+            <!-- Adjusted button rendering -->
+            <div v-if="props.links">
+              <Button
+                v-if="!isExternal(feature.link)"
+                :to="feature.link"
+                :long="3"
+              >
+                <span>Get Started</span>
+              </Button>
+              <a
+                v-else
+                :href="feature.link"
+                target="_blank"
+                rel="noopener"
+                class="button is-long-3"
+              >
+                <span>Get Started</span>
+              </a>
+            </div>
+
             <div class="bubble bubble-1" />
             <div class="bubble bubble-2" />
             <div class="bubble bubble-3" />
@@ -73,6 +96,7 @@ const boxClasses = computed(() => [props.animated && `animated`])
     </div>
   </div>
 </template>
+
 
 <style lang="scss" scoped>
 .box {

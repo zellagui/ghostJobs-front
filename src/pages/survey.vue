@@ -392,11 +392,5 @@ const handleSubmit = async () => {
       </div>
     </Container>
   </Section>
-  <FooterA
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
-                non possum. Apparet statim, quae sint officia, quae actiones."
-    color="grey"
-    :social-links="socialLinks"
-  />
 </template>
 

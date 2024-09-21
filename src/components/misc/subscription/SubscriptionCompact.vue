@@ -10,7 +10,7 @@ const props = defineProps<SubscriptionCompactProps>()
 const email = ref('');
 const emailSubmitted = ref(false); // Tracks if the email has been submitted
 
-const webhookUrl = 'https://hook.us1.make.com/tjgxlhgou1pv32hbjn4vw5nyjmo5xoey';
+const webhookUrl = 'https://hook.us1.make.com/t06bdpvfy7dx2rvkq1nko81phk3julh1';
 
 const handleSubmit = async () => {
   const formData = {

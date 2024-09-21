@@ -14,6 +14,8 @@
     testimonials,
   } from '/@src/data/pages/jobs'
   import { socialLinks } from '/@src/data/blocks/advanced/social'
+  import { baseFeatures } from '/@src/data/blocks/advanced/features'
+
 
   import {
       businessSolutions,
@@ -37,9 +39,22 @@
 
     <Section color="grey">
       <Container>
+        <Container>
+          <LogoStats
+            title="40% of companies"
+            subtitle="have posted fake job listings in 2024"
+            heading="Join us and grow"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis negat? Fortemne possumus dicere eundem illum Torquatum? De illis, cum volemus."
+            :logos="customerLogos"
+          />
+  
+          <!-- <ValuesSection :values="values" /> -->
+        </Container>
+        <br>
+        <br>
         <SectionTitle
           title="How to Spot Suspicious Job Postings"
-          subtitle="Did you know ?"
+          subtitle="Did you know?"
         />
   
         <FeatureBlockA
@@ -75,15 +90,23 @@
       <Container>
         <SectionTitle
           title="Coming soon"
-          subtitle="Access postings reviews & companies opening historical data"
+          subtitle="Your new ally helping the community fight ghost jobs"
         />
         <br>
+         
+        <AppSection
+          :features="baseFeatures"
+          image="/images/Flagged.svg"
+          dark-image="/images/Flagged.svg"
+          blob
+        />
 
-        <FullJobSearch />
+
+        <!-- <FullJobSearch /> -->
         <Countdown date="Sep 30, 2024" />
 
         <br>
-        <div class="box-carousel-title max-w-7 mb-6">
+        <!-- <div class="box-carousel-title max-w-7 mb-6">
           <Subtitle
             tag="h3"
             :size="6"
@@ -132,13 +155,14 @@
             image-height="647"
             blob
           />
-        </Container>
+        </Container> -->
         <!-- <JobGrid :jobs="jobs" /> -->
         <br>
       
         <Container>
           <SectionTitle
             title="How to support the movement"
+            subtitle=" "
           />
 
           <PulseCards
@@ -152,13 +176,13 @@
 
         <Container>
           <SectionTitle
-            title="Be our beta user &#8212; It's Free"
+            title="Empower the / MOVEMENT"
             subtitle="Ready to join us?"
           />
 
           <!--Subscribe-->
           <SubscriptionCompactBlock
-            text="Early user get a private access to the Discord, where your idea's are part of the solution."
+            text=""
             label="Subscribe"
             placeholder="Enter your email"
           />
@@ -169,18 +193,16 @@
  
  
   
-  
+          
     <FooterA
       text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
                 non possum. Apparet statim, quae sint officia, quae actiones."
-      color="grey"
+      color="gray"
       :social-links="socialLinks"
     />
   </div>
 </template>
   
-
-
 <!-- <route lang="yaml">
   meta:
     footer:

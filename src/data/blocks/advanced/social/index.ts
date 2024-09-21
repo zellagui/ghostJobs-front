@@ -1,5 +1,10 @@
 export const socialLinks = [
   {
+    name: 'Discord',
+    url: 'https://discord.com/invite/rGja9MGQYk',
+    icon: 'ph:discord-logo',
+  },
+  {
     name: 'X',
     url: 'https://x.com/ghostjobs_',
     icon: 'fa:twitter',
@@ -8,10 +13,5 @@ export const socialLinks = [
     name: 'Linkedin',
     url: 'https://www.linkedin.com/company/104921225',
     icon: 'fa:linkedin',
-  },
-  {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/ghostjobs_/',
-    icon: 'fa:instagram',
   },
 ]

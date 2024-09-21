@@ -1,25 +1,9 @@
 import type { VulkConfig } from '/@src/types'
 
-/**
- * Set your default Navbar by importing a vue component
- * Note: If you rename the import, make sure to update the type definition bellow
- *
- * @example import Navbar from '/@src/components/blocks/navbar-blocks/NavbarA.vue'
- */
 import Navbar from '/@src/components/navigation/navbar/Navbar.vue'
 
-// Additonal megamenu components required by the Navbar
-// import CompanyMegamenu from '/@src/components/navigation/navbar/megamenu/CompanyMegamenu.vue'
-// import ProductMegamenu from '/@src/components/navigation/navbar/megamenu/ProductMegamenu.vue'
-// import ResourcesMegamenu from '/@src/components/navigation/navbar/megamenu/ResourcesMegamenu.vue'
 
-/**
- * Set your default Footer by importing a vue component
- * Note: If you rename the import, make sure to update the type definition bellow
- *
- * @example import Footer from '/@src/components/blocks/footer-blocks/FooterA.vue'
- */
-import Footer from '/@src/components/layout/footer/Footer.vue'
+import type Footer from '/@src/components/layout/footer/Footer.vue'
 
 // Auto detect the type of the imported components
 type NavbarType = typeof Navbar
@@ -29,9 +13,10 @@ type AppConfig = VulkConfig<NavbarType, FooterType>
 /**
  * This is the main configuration file for the app
  */
+
 export default {
   name: 'Ghosts job',
-  title: 'Ghosts Job | Home',
+  title: 'Ghosts Job',
   description:
     'Vulk is a premium toolkit that lets you build powerful, SSR-Ready memorable websites.',
   url: import.meta.env.VITE_APP_URL || 'http://localhost:3000/',
@@ -62,203 +47,198 @@ export default {
       component: Navbar,
       props: {
         // define default props for Navbar here, you can override them using page meta
-        cta: {
-          to: '/',
-          target: '_blank',
-          label: 'Subscribe',
-        },
+        // cta: {
+        //   to: '/',
+        //   target: '_blank',
+        //   label: 'Subscribe',
+        // },
         items: [
           {
             label: 'Home',
             to: '/',
           },
-         
           {
-            label: 'Survey',
-            to: 'survey',
-          },
-          {
-            label: 'Blog',
+            label: 'Job hacks',
             to: 'blog',
           },
-          // {
-          //   label: 'Contact Us',
-          //   to: '/page/faq',
-          // },
+          {
+            label: 'Contact',
+            to: 'contact-us',
+          },
         ],
       },
     },
-    footer: {
-      enabled: false,
-      component: Footer,
-      props: {
-        // define default props for Footer here, you can override them using page meta
-        color: 'dark',
-        content: {
-          cta: {
-            title: 'Maximize your marketplace potential',
-            subtitle: '30-day free trial',
-            benefits: [
-              {
-                label: 'AI-powered tech',
-              },
-              {
-                label: 'Hours of time saved',
-              },
-            ],
-            links: [
-              {
-                label: 'Get Started',
-                to: '/',
-              },
-              {
-                label: "Let's Talk",
-                to: '/',
-              },
-            ],
-          },
-          newsletter: {
-            action: '#',
-            method: 'POST',
-          },
-          columns: [
-            {
-              title: 'Product',
-              links: [
-                {
-                  label: 'Core features',
-                  to: '/',
-                },
-                {
-                  label: 'Extensions',
-                  to: '/',
-                },
-                {
-                  label: 'Marketing',
-                  to: '/',
-                },
-                {
-                  label: 'Sales Management',
-                  to: '/',
-                },
-                {
-                  label: 'Software',
-                  to: '/',
-                },
-              ],
-            },
-            {
-              title: 'Company',
-              links: [
-                {
-                  label: 'Register',
-                  to: '/',
-                },
-                {
-                  label: '14-Day Trial',
-                  to: '/',
-                },
-                {
-                  label: 'About Us',
-                  to: '/',
-                },
-                {
-                  label: 'Careers',
-                  to: '/',
-                },
-                {
-                  label: 'Latest News',
-                  to: '/',
-                },
-              ],
-            },
-            {
-              title: 'API',
-              links: [
-                {
-                  label: 'Getting Started',
-                  to: '/',
-                },
-                {
-                  label: 'API Reference',
-                  to: '/',
-                },
-                {
-                  label: 'Developer Guide',
-                  to: '/',
-                },
-                {
-                  label: 'GitHub',
-                  to: '/',
-                },
-              ],
-            },
-            {
-              title: 'Assistance',
-              links: [
-                {
-                  label: 'Help Center',
-                  to: '/',
-                },
-                {
-                  label: 'Support Requests',
-                  to: '/',
-                },
-                {
-                  label: 'FAQs',
-                  to: '/',
-                },
-                {
-                  label: 'Licensing',
-                  to: '/',
-                },
-              ],
-            },
-          ],
-          socials: [
-            {
-              icon: 'fa-brands:facebook-f',
-              link: '/',
-              name: 'Facebook',
-            },
-            {
-              icon: 'fa-brands:twitter',
-              link: '/',
-              name: 'Twitter',
-            },
-            {
-              icon: 'fa-brands:linkedin-in',
-              link: '/',
-              name: 'Linkedin',
-            },
-            {
-              icon: 'fa-brands:youtube',
-              link: '/',
-              name: 'Youtube',
-            },
-            {
-              icon: 'fa-brands:github',
-              link: '/',
-              name: 'GitHub',
-            },
-          ],
-          links: [
-            {
-              label: 'Contact Us',
-              to: '/',
-            },
-            {
-              label: 'Privacy',
-              to: '/',
-            },
-            {
-              label: 'Terms Of Service',
-              to: '/',
-            },
-          ],
-          copyright: '© 2022-2023 Css Ninja. All rights reserved.',
-        },
-      },
-    },
+    // footer: {
+    //   enabled: false,
+    //   component: Footer,
+    //   props: {
+    //     // define default props for Footer here, you can override them using page meta
+    //     color: 'dark',
+    //     content: {
+    //       cta: {
+    //         title: 'Maximize your marketplace potential',
+    //         subtitle: '30-day free trial',
+    //         benefits: [
+    //           {
+    //             label: 'AI-powered tech',
+    //           },
+    //           {
+    //             label: 'Hours of time saved',
+    //           },
+    //         ],
+    //         links: [
+    //           {
+    //             label: 'Get Started',
+    //             to: '/',
+    //           },
+    //           {
+    //             label: "Let's Talk",
+    //             to: '/',
+    //           },
+    //         ],
+    //       },
+    //       newsletter: {
+    //         action: '#',
+    //         method: 'POST',
+    //       },
+    //       columns: [
+    //         {
+    //           title: 'Product',
+    //           links: [
+    //             {
+    //               label: 'Core features',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Extensions',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Marketing',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Sales Management',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Software',
+    //               to: '/',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           title: 'Company',
+    //           links: [
+    //             {
+    //               label: 'Register',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: '14-Day Trial',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'About Us',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Careers',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Latest News',
+    //               to: '/',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           title: 'API',
+    //           links: [
+    //             {
+    //               label: 'Getting Started',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'API Reference',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Developer Guide',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'GitHub',
+    //               to: '/',
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           title: 'Assistance',
+    //           links: [
+    //             {
+    //               label: 'Help Center',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Support Requests',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'FAQs',
+    //               to: '/',
+    //             },
+    //             {
+    //               label: 'Licensing',
+    //               to: '/',
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //       socials: [
+    //         {
+    //           icon: 'fa-brands:facebook-f',
+    //           link: '/https://',
+    //           name: 'Facebook',
+    //         },
+    //         {
+    //           icon: 'fa-brands:twitter',
+    //           link: '/',
+    //           name: 'Twitter',
+    //         },
+    //         {
+    //           icon: 'fa-brands:linkedin-in',
+    //           link: '/',
+    //           name: 'Linkedin',
+    //         },
+    //         {
+    //           icon: 'fa-brands:youtube',
+    //           link: '/',
+    //           name: 'Youtube',
+    //         },
+    //         {
+    //           icon: 'fa-brands:github',
+    //           link: '/',
+    //           name: 'GitHub',
+    //         },
+    //       ],
+    //       links: [
+    //         {
+    //           label: 'Contact Us',
+    //           to: '/',
+    //         },
+    //         {
+    //           label: 'Privacy',
+    //           to: '/',
+    //         },
+    //         {
+    //           label: 'Terms Of Service',
+    //           to: '/',
+    //         },
+    //       ],
+    //       copyright: '© 2022-2023 Css Ninja. All rights reserved.',
+    //     },
+    //   },
+    // },
   },
 } as AppConfig

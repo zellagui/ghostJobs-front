@@ -8,16 +8,16 @@ import type {
 
 export const baseFeatures: BaseFeature[] = [
   {
-    title: 'AI Powered',
-    text: 'Our AI handles every complex operation, letting you focus.',
+    title: 'Real-Time Tracking',
+    text: 'Monitor reported ghost jobs and flagged companies with up-to-date stats.',
   },
   {
-    title: 'Real-Time Data',
-    text: 'All your data is processed in real-time, for better performance.',
+    title: 'Community-Driven Reports',
+    text: 'Empower users to report and verify suspicious job postings collectively',
   },
   {
-    title: 'Fast and Secure',
-    text: 'Your data is virtually unhackable compared to traditional net.',
+    title: 'Detailed Company Insights',
+    text: 'Access historical data, reviews, and alerts on problematic companies.',
   },
 ]
 

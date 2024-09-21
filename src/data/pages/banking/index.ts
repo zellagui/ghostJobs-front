@@ -3,24 +3,24 @@ import type { IconFeature, ImageFeature } from '/@src/types'
 export const businessSolutions: ImageFeature[] = [
   {
     title: 'Report',
-    text: 'Report suspicious job postings you come across to help the community.',
-    image: '/images/flag.svg',
-    darkImage: '/images/flag.svg',
-    link: 'https://lookerstudio.google.com/u/0/reporting/5724f0c6-59c9-41cb-965c-f406de5a3902/page/UYFIC?s=vxVDBI1BGLE',
+    text: 'Flag a suspicious job postings.',
+    image: '/images/flag2.svg',
+    darkImage: '/images/flag2.svg',
+    link: 'https://forms.gle/vnKe7wdRZdbHgrUL6',
   },
   {
-    title: 'Engage & Share',
-    text: 'Join our Discord, follow us on social media, and help spread the word.',
-    image: '/images/discord2.png',
-    darkImage: '/images/discord2.png',
-    link: 'https://discord.gg/dJUmW38k',
+    title: 'Join the movement',
+    text: 'Driven community fighting ghost job',
+    image: '/images/community.svg',
+    darkImage: '/images/community.svg',
+    link: 'https://discord.com/invite/rGja9MGQYk',
   },
   {
-    title: 'Kickstarter',
-    text: 'Back our cause on Kickstarter Coming Soon :)',
-    image: '/images/kickstarter.png',
-    darkImage: '/images/kickstarter.png',
-    link: '/',
+    title: 'Helpful Survey',
+    text: 'Help creating a better experience',
+    image: '/images/survey.svg',
+    darkImage: '/images/survey.svg',
+    link: '/survey',
   },
 ]
 

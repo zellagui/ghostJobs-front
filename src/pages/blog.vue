@@ -5,38 +5,14 @@
     </route>
     
     <script setup lang="ts">
-    import { helpCenterTopics, helpCenterCategories } from '/@src/data/pages/help'
-    import { genericFaq } from '/@src/data/blocks/advanced/faq'
-    import { boxedPosts } from '/@src/data/pages/nft'
+    import { helpCenterCategories } from '/@src/data/pages/help'
+    // import { genericFaq } from '/@src/data/blocks/advanced/faq'
+    // import { boxedPosts } from '/@src/data/pages/nft'
     import { socialLinks } from '/@src/data/blocks/advanced/social'
     </script>
     
 <template>
   <div>
-    <Container>
-      <div class="mx-auto max-w-9">
-        <PageTitle
-          title="Receive an early invite"
-          subtitle="Ready to join us ?"
-        >
-          <template #content>
-            <div class="mx-auto max-w-6 mt-2">
-              <!-- <p class="paragraph rem-115">
-                Early user get a private access to the Discord, where your idea's are part of the solution.
-              </p> -->
-            </div>
-
-            <div class="mx-auto max-w-4 mt-4">
-              <SubscriptionCompact
-                label="Subscribe"
-                placeholder="Enter your email"
-              />
-            </div>
-          </template>
-        </PageTitle>
-      </div>
-    </Container>
-    
     <Section color="grey">
       <Container>
         <SectionTitle
@@ -47,7 +23,11 @@
         <HelpCenterCategories :categories="helpCenterCategories" />
       </Container>
     </Section>
-    
+    <FooterA
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
+                non possum. Apparet statim, quae sint officia, quae actiones."
+      :social-links="socialLinks"
+    />
     <!-- <Section color="grey">
       <Container>
         <SectionTitle
@@ -74,11 +54,5 @@
       :social-links="socialLinks"
     /> -->
   </div>
-  <FooterA
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
-                non possum. Apparet statim, quae sint officia, quae actiones."
-    color="grey"
-    :social-links="socialLinks"
-  />
 </template>
     

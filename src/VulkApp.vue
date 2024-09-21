@@ -41,7 +41,7 @@ useHead(() => ({
     },
     {
       rel: 'alternate icon',
-      href: '/favicon.ico',
+      href: '/assets/logo/gg.svg',
       type: 'image/x-icon',
     },
     {
