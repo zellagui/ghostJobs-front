@@ -7,11 +7,9 @@
   <script setup lang="ts">
   import { customerLogos } from '/@src/data/pages/logos'
   import {
-    jobs,
-    jobTopics,
+    
     jobCategories,
-    candidates,
-    testimonials,
+  
   } from '/@src/data/pages/jobs'
   import { socialLinks } from '/@src/data/blocks/advanced/social'
   import { baseFeatures } from '/@src/data/blocks/advanced/features'
